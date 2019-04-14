@@ -3,11 +3,11 @@ import os
 import re
 from bs4 import BeautifulSoup
 
-corpus_src_dir = '../cacm'
-corpus_dest_dir = '../corpus'
+corpus_src_dir = '../test-collection/cacm'
+corpus_dest_dir = '../generated_files/corpus'
 
-cacm_query_src = '../cacm.query.txt'
-cacm_query_dest = '../query.txt'
+cacm_query_src = '../test-collection/cacm.query.txt'
+cacm_query_dest = '../generated_files/query.txt'
 
 re_cite = re.compile('\[[0-9.,]*\]')
 re_punc = re.compile('[^0-9a-zA-Z- \n\t]+')
@@ -15,7 +15,7 @@ re_newline = re.compile('\n+')
 re_space = re.compile('\\s+')
 
 
-# transfer raw html files to text files
+# transfer raw html generated_files to text generated_files
 def get_corpus(src_dir, dest_dir):
     file_list = os.listdir(src_dir)
     if not os.path.exists(dest_dir):
