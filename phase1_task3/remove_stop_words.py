@@ -39,14 +39,14 @@ def get_stop_words():
     f = open(common_words_path, 'r')
     stop_words = f.read().split()
     return stop_words
-# def delte_stopping():
-#     f = open('tfidf_stopping.txt', 'r')
-#     lines = []
-#     for line in f.readlines():
-#         lines.append(''.join(line.split('stopping-')))
-#     f.close()
-#     outfile = open('tfidf_stopping.txt', 'w')
-#     outfile.write("\n".join(lines))
+def delte_stopping():
+    f = open('tfidf_stemming.txt', 'r')
+    lines = []
+    for line in f.readlines():
+        lines.append(''.join(line.split('stemming-')))
+    f.close()
+    outfile = open('tfidf_stemming.txt', 'w')
+    outfile.write("\n".join(lines))
 if __name__ == '__main__':
     remove_corpus_stop_words('../generated_files/corpus')
     remove_query_stop_words('../generated_files/query.txt')
