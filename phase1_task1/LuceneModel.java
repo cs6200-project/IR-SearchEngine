@@ -32,7 +32,7 @@ import org.apache.lucene.util.Version;
  * To create Apache Lucene index in a folder and add files into this index based
  * on the input of the user.
  */
-public class QueryLikelihoodModel {
+public class LuceneModel {
   private static Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_47);
   private static Analyzer sAnalyzer = new SimpleAnalyzer(Version.LUCENE_47);
 
@@ -47,10 +47,10 @@ public class QueryLikelihoodModel {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String s = br.readLine();
 
-    QueryLikelihoodModel indexer = null;
+    LuceneModel indexer = null;
     try {
       indexLocation = s;
-      indexer = new QueryLikelihoodModel(s);
+      indexer = new LuceneModel(s);
     } catch (Exception ex) {
       System.out.println("Cannot create index..." + ex.getMessage());
       System.exit(-1);
@@ -138,7 +138,7 @@ public class QueryLikelihoodModel {
    * @throws java.io.IOException
    *             when exception creating index.
    */
-  QueryLikelihoodModel(String indexDir) throws IOException {
+  LuceneModel(String indexDir) throws IOException {
 
     FSDirectory dir = FSDirectory.open(new File(indexDir));
 
