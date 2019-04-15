@@ -135,7 +135,7 @@ class tfidf_model_pseudo_relevance_feedback:
             count = 0
             for line in score:
                 count += 1
-                f.write(str(key) + ' Q0 ' + line[0] + ' ' + str(count) + ' ' + str(line[1]) + ' TFIDF\n')
+                f.write(str(key) + ' Q0 ' + line[0] + ' ' + str(count) + ' ' + str(line[1]) + ' PSEUDO_RELEVANCE_FEEDBACK\n')
                 if count >= self.top_res:
                     break
         f.close()
