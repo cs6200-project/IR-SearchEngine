@@ -12,12 +12,12 @@ def process_stem_corpus(corpus_path, dest_path):
         cacm = ' '.join(cacm.split('\n')[1:])
         content = cacm
         pmcacm = cacm.split('pm')
-        if len(pmcacm) == 2:
-            content = pmcacm[0]+'pm'
+        if len(pmcacm) > 1:
+            content = "pm".join(pmcacm[:-1])+'pm'
         else:
             amcacm = cacm.split('am')
-            if len(amcacm) == 2:
-                content = amcacm[0]+'am'
+            if len(amcacm) > 1:
+                content = "am".join(amcacm[:-1])+'am'
         idxnum = (4 - len(str(index)))*'0' + str(index)
         outfile = open(dest_path+'stemming-CACM-' + idxnum+'.html', 'w')
         outfile.write(content)
@@ -35,5 +35,5 @@ def process_stem_query(query_path, query_dest_path):
     outfile.write('\n'.join(newlines))
 
 if __name__ == '__main__':
-    # process_stem_corpus(corpus_path, corpus_dest_path)
+    process_stem_corpus(corpus_path, corpus_dest_path)
     process_stem_query(query_path, query_dest_path)
