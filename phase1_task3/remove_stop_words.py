@@ -40,13 +40,14 @@ def get_stop_words():
     stop_words = f.read().split()
     return stop_words
 def delte_stopping():
-    f = open('tfidf_stemming.txt', 'r')
+    f = open('bm25_stemming.txt', 'r')
     lines = []
     for line in f.readlines():
         lines.append(''.join(line.split('stemming-')))
     f.close()
-    outfile = open('tfidf_stemming.txt', 'w')
+    outfile = open('bm25_stemming.txt', 'w')
     outfile.write("\n".join(lines))
 if __name__ == '__main__':
-    remove_corpus_stop_words('../generated_files/corpus')
-    remove_query_stop_words('../generated_files/query.txt')
+    # remove_corpus_stop_words('../generated_files/corpus')
+    # remove_query_stop_words('../generated_files/query.txt')
+    delte_stopping()
