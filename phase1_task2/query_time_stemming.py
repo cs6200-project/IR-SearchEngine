@@ -3,9 +3,9 @@ import math
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 
-index_path = '../index.txt'
-doc_len_path = '../doc_length.txt'
-query_path = '../query.txt'
+index_path = '../generated_files/index.txt'
+doc_len_path = '../generated_files/doc_length.txt'
+query_path = '../generated_files/query.txt'
 result_path = 'query time stemming.txt'
 
 

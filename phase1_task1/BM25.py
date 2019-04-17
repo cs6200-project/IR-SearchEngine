@@ -3,10 +3,10 @@ import math
 import os
 from collections import Counter
 
-corpus_path = '../corpus'
-index_path = '../index.txt'
-doc_len_path = '../doc_length.txt'
-query_path = '../query.txt'
+corpus_path = '../generated_files/corpus'
+index_path = '../generated_files/index.txt'
+doc_len_path = '../generated_files/doc_length.txt'
+query_path = '../generated_files/query.txt'
 result_path = 'bm25.txt'
 
 

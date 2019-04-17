@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 import os
 
-corpus_dir = '../corpus'
+corpus_dir = '../generated_files/corpus'
 
-save_index_path = '../index.txt'
-save_doc_length_path = '../doc_length.txt'
-save_tf_path = '../tf.txt'
+save_index_path = '../generated_files/index.txt'
+save_doc_length_path = '../generated_files/doc_length.txt'
+save_tf_path = '../generated_files/tf.txt'
 
 
 def get_inverted_index(corpus_path):

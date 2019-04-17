@@ -33,6 +33,10 @@ BM25_STOPPING_OUTPUT = os.path.abspath(os.path.join(os.getcwd(), "../results/pha
 TFIDF_STOPPING_RESULT = os.path.abspath(os.path.join(os.getcwd(), "../results/phase1_task3_res/tfidf_stopping.txt"))
 TFIDF_STOPPING_OUTPUT = os.path.abspath(os.path.join(os.getcwd(), "../results/phase3/tfidf_stopping_evaluation.txt"))
 
+# phase 3
+REL_FEEDBACK_STOP_RESULT = os.path.abspath(os.path.join(os.getcwd(), "../results/phase3/query_expansion_stopping_res.txt"))
+REL_FEEDBACK_STOP_OUTPUT = os.path.abspath(os.path.join(os.getcwd(), "../results/phase3/query_expansion_stopping_evaluation.txt"))
+
 relevance_dict = defaultdict(list)
 query_result_dict = defaultdict(list)
 query_result_info_dict = defaultdict(list)
@@ -228,7 +232,8 @@ def main():
     evaluation(TFIDF_STOPPING_OUTPUT)
 
     # phase 3 evaluation
-
+    read_query_results(REL_FEEDBACK_STOP_RESULT)
+    evaluation(REL_FEEDBACK_STOP_OUTPUT)
 
 
 main()
