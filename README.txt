@@ -2,6 +2,7 @@ CS 6200 Information Retrieval Final Project
 
 Structure of Project:
     - README.txt: readme file
+    - .gitignore.txt: gitignore file
     - generated_files: include generated intermediates which could be reused in multiple tasks
     - test-collection: given dataset
     - phase1_task1:
@@ -46,3 +47,8 @@ Structure of Project:
         * /phase1_task3_res: all result files for task 3 in phase 1
         * /phase2: all result files for phase 2
         * /phase3: all result files for phase 3
+
+Project Setup:
+    - Install Python 3, Java 8 and preferred IDE
+    - Install third-party libraries: nltk, bs4
+    - To run the program, try to clear generated files first, and then run each task or phase in sequence
