@@ -8,7 +8,8 @@ index_path = 'index.txt'
 doc_len_path = 'doc_length.txt'
 query_path = '../generated_files/stemming-query.txt'
 result_path = 'bm25_stemming.txt'
-
+# query_path = '../generated_files/stopping-query.txt'
+# result_path = 'bm25_stopping.txt'
 
 class bm25_model:
     K1 = 1.2

@@ -26,7 +26,7 @@ Structure of Project:
         * tfidf2.py: build stemmed version of Tf/idf retrieval model
         * inverted_index2.py: build stemmed version of unigram indexer
         * process_stem_cacm.py: read stemmed version of given data
-        * remove_stop_words.py:
+        * remove_stop_words.py: remove stop words in query and corpus
         * bm25_stemming.txt: result ranked list of stemmed version BM25 retrieval model
         * bm25_stopping.txt: result ranked list of stopped version BM25 retrieval model
         * tfidf_stemming.txt: result ranked list of stemmed version Tf/idf retrieval model
@@ -52,3 +52,4 @@ Project Setup:
     - Install Python 3, Java 8 and preferred IDE
     - Install third-party libraries: nltk, bs4
     - To run the program, try to clear generated files first, and then run each task or phase in sequence
+        * to generate bm25_stopping.txt and tfidf_stopping.txt, you should uncomment codes to replace files

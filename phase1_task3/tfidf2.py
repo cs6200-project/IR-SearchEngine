@@ -5,6 +5,8 @@ index_path = 'index.txt'
 doc_len_path = 'doc_length.txt'
 query_path = '../generated_files/stemming-query.txt'
 result_path = 'tfidf_stemming.txt'
+# query_path = '../generated_files/stopping-query.txt'
+# result_path = 'tfidf_stopping.txt'
 
 
 class tfidf_model:
