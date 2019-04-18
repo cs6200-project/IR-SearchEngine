@@ -209,31 +209,53 @@ def evaluation(output):
 def main():
     read_relevance_judgments(RELEVANCE)
 
+    # uncomment each one to run, don't run them together
+
     # phase 1 - task 1 evaluation
     read_query_results(BM25_RESULT)
     evaluation(BM25_OUTPUT)
+
+    '''
     read_query_results(LUCENE_RESULT)
     evaluation(LUCENE_OUTPUT)
+    '''
+
+    '''
     read_query_results(TFIDF_RESULT)
     evaluation(TFIDF_OUTPUT)
+    '''
+
+    '''
     read_query_results(Q_LIKELIHOOD_RESULT)
     evaluation(Q_LIKELIHOOD_OUTPUT)
+    '''
 
     # phase 1 - task 2 evaluation
+    '''
     read_query_results(REL_FEEDBACK_RESULT)
     evaluation(REL_FEEDBACK_OUTPUT)
+    '''
+
+    '''
     read_query_results(STEM_QUERY_RESULT)
     evaluation(STEM_QUERY_OUTPUT)
+    '''
 
     # phase 1 - task 3 evaluation
+    '''
     read_query_results(BM25_STOPPING_RESULT)
     evaluation(BM25_STOPPING_OUTPUT)
+    '''
+
+    '''
     read_query_results(TFIDF_STOPPING_RESULT)
     evaluation(TFIDF_STOPPING_OUTPUT)
+    '''
 
     # phase 3 evaluation
+    '''
     read_query_results(REL_FEEDBACK_STOP_RESULT)
     evaluation(REL_FEEDBACK_STOP_OUTPUT)
-
+    '''
 
 main()
