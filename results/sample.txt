@@ -1,3 +1,0 @@
-This is a sample of result files
-
-Results for different tasks should be put into corresponding folders

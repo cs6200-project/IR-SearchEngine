@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import math
 
-index_path = '../index.txt'
-doc_len_path = '../doc_length.txt'
-query_path = '../query.txt'
+index_path = '../generated_files/index.txt'
+doc_len_path = '../generated_files/doc_length.txt'
+query_path = '../generated_files/query.txt'
 result_path = 'tfidf.txt'
 
 
